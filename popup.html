@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <strong>Clean &amp; Peek</strong>
+    <label class="switch" title="Nettoyage automatique des URL">
+      <input type="checkbox" id="auto"><span>Nettoyage auto</span>
+    </label>
+  </header>
+  <nav>
+    <button data-tab="url" class="active">URL</button>
+    <button data-tab="cookies">Cookies</button>
+    <button data-tab="trackers">Traqueurs</button>
+  </nav>
+  <main>
+    <section id="url"></section>
+    <section id="cookies" hidden></section>
+    <section id="trackers" hidden></section>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

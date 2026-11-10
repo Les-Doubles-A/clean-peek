@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Clean & Peek",
+  "version": "1.0.0",
+  "description": "Nettoie les URL des paramètres de tracking et montre les cookies et traqueurs de chaque site.",
+  "permissions": ["declarativeNetRequest", "webRequest", "cookies", "storage", "tabs", "contextMenus", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Clean & Peek", "default_popup": "popup.html" }
+}
