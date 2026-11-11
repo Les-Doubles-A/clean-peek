@@ -21,7 +21,7 @@ Extension Manifest V3 (Chrome / Edge / Brave) : nettoyage d'URL + visualiseur de
 <!-- installeur-release -->
 ## Installation
 
-Téléchargez **`clean-peek-Setup-1.0.0.exe`** depuis la [dernière release](https://github.com/Les-Doubles-A/clean-peek/releases/latest), puis lancez-le.
+Téléchargez **`clean-peek-Setup-1.0.1.exe`** depuis la [dernière release](https://github.com/Les-Doubles-A/clean-peek/releases/latest), puis lancez-le.
 
 L'installeur copie l'extension dans `%LOCALAPPDATA%\Programs\clean-peek\extension` puis affiche la marche à suivre :
 

@@ -1,7 +1,7 @@
 ﻿; Installeur Inno Setup de clean-peek. Compilation : iscc installer\clean-peek.iss
-; Le setup est cree dans installer\Output\clean-peek-Setup-1.0.0.exe
+; Le setup est cree dans installer\Output\clean-peek-Setup-1.0.1.exe
 #define MyAppName "clean-peek"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppURL "https://github.com/Les-Doubles-A/clean-peek"
 
 [Setup]
@@ -25,6 +25,8 @@ WizardStyle=modern
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 CloseApplications=yes
+SetupIconFile=clean-peek.ico
+UninstallDisplayIcon={app}\clean-peek.ico
 InfoAfterFile=INSTALLATION.txt
 Uninstallable=yes
 
@@ -34,6 +36,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "INSTALLATION.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "clean-peek.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\icons\*"; DestDir: "{app}\extension\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\manifest.json"; DestDir: "{app}\extension"; Flags: ignoreversion
 Source: "..\background.js"; DestDir: "{app}\extension"; Flags: ignoreversion
 Source: "..\popup.css"; DestDir: "{app}\extension"; Flags: ignoreversion
@@ -42,7 +46,7 @@ Source: "..\popup.js"; DestDir: "{app}\extension"; Flags: ignoreversion
 Source: "..\shared.js"; DestDir: "{app}\extension"; Flags: ignoreversion
 
 [Icons]
-Name: "{autoprograms}\{#MyAppName} - dossier de l'extension"; Filename: "{app}\extension"
+Name: "{autoprograms}\{#MyAppName} - dossier de l'extension"; Filename: "{app}\extension"; IconFilename: "{app}\clean-peek.ico"
 Name: "{autoprograms}\{#MyAppName} - instructions"; Filename: "{app}\INSTALLATION.txt"
 
 [Run]
